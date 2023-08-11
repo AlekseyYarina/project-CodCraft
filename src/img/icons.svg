@@ -23,7 +23,7 @@
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" d="M35 8.667H5M35 2H5M35 15.333H5M35 22H5"/>
     </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="4" d="M29.333 2.667 2.666 29.334M2.667 2.667l26.667 26.667"/>
+      <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
     </symbol>
   </defs>
 </svg>
