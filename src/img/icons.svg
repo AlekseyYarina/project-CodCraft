@@ -19,19 +19,15 @@
     <symbol id="icon-logo" viewBox="0 0 241 32">
       <path d="M0 31.965V0h5.991l14.798 10.372h.224L35.811 0h5.99v31.965h-7.153V8.941L24.5 15.736v16.228h-7.153V15.736L7.154 8.941v23.024H.001zM48.515 31.965V0h7.153v31.965h-7.153zM62.365 31.965V0h7.242l22.621 22.979V0h7.153v31.965h-7.242L69.518 8.941v23.024h-7.153zM106.077 31.965V0h7.153v31.965h-7.153zM119.927 31.965V0h5.991l14.798 10.372h.223L155.737 0h5.991v31.965h-7.153V8.941l-10.148 6.795v16.228h-7.153V15.736l-10.193-6.795v23.024h-7.153zM165.759 31.965 180.154 0h11.042l14.396 31.965h-7.78l-3.04-6.751h-18.195l-3.04 6.751h-7.779zm13.412-12.563h13.01l-6.214-13.814h-.581l-6.214 13.814zM209.623 31.965V0h7.153v26.153h23.381v5.812h-30.534z"/>
     </symbol>
-   <svg width="0" height="0" class="icon-menu">
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-menu">
-    <path d="M28 13.3333H4" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M28 8H4" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M28 18.6667H4" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M28 24H4" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-menu">
+    <path d="M28 13.3333H4" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M28 8H4" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M28 18.6667H4" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M28 24H4" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-</svg>
-  <svg width="0" height="0" class="hidden">
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-close">
-    <path d="M24 8L8 24" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M8 8L24 24" stroke="#0A224A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <symbol  viewBox="0 0 32 32" id="icon-close">
+    <path d="M24 8L8 24" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M8 8L24 24" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
-</svg>
   </defs>
 </svg>
