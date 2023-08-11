@@ -59,6 +59,7 @@ img {
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--blue-font, #0a224a);
