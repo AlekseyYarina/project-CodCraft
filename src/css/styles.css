@@ -1,5 +1,21 @@
 @import url('./reset.css');
 @import url('./variables.css');
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--blue-font, #0a224a);
+    background-color: var(--white, #FFFFFF);
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    border: 1px solid red;
+  }
+
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about.css');
