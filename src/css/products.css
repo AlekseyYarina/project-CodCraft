@@ -1,9 +1,28 @@
 
 @media screen and (min-width: 375px) {
-  .container {
+.products>.container {
     max-width: 375px;
   }
 .products {
     padding: 64px 0;
 }
-  }
+.products-title {
+color: var(--blue-font, #0A224A);
+font-size: 28px;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 33px;
+}
+.products-list{
+display: flex;
+flex-direction: row;
+}
+.products-card-two,
+.products-card-three,
+.products-card-four {
+    display: none;
+}
+.products-description{
+margin-top: 16px;
+}
+}
