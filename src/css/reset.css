@@ -22,10 +22,12 @@ ul, ol {
 a {
   color: currentColor;
   text-decoration: none;
+  outline: none;
 }
 
 button {
   cursor: pointer;
+  outline: none;
 }
 
 img {
