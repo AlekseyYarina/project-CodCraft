@@ -1,16 +1,3 @@
-body {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--blue-font, #0a224a);
-  background-color: var(--white, #FFFFFF);
-}
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
-}
 .bestsellers {
   padding: 64px 0;
 }
@@ -47,66 +34,82 @@ font-weight: 700;
   flex-wrap: wrap;
   gap: 30px;
 }
-.bestsellers_item {
-
-}
 .bestsellers_item-none{
   display: none;
 }
 .bestsellers_catalog {
-  
+  margin-bottom: 14px;
 }
 @media screen and (min-width: 375px) {
   .container {
-    max-width: 373px;
+    max-width: 375px;
   }
+.bestsellers_catalog {
+  max-width: 343px;
+}
 }
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 734px;
-  }
-  .bestsellers {
-    padding: 100px 0;
-  }
-  .bestsellers_platform {
-    margin-bottom: 32px;;
-  }
-  .bestsellers_list {
-    gap: 32px;
-  }
-  .bestsellers_item{
-  width: calc((100% - 32px) / 2);
-  }
-  .bestsellers_item-none{
-    display: block;
-  }
-  .bestsellers_title{
-  font-size: 32px;}
-  .bestsellers_text{
-    font-size: 18px;
-  }
-  .bestsellers_images {
-    max-width: 704px;
-  }
-  
-  .bestsellers_price{
-    font-size: 18px;
-  }
+.container {
+  max-width: 736px;
+}
+.bestsellers {
+  padding: 100px 0;
+}
+.bestsellers_platform {
+  margin-bottom: 32px;
+}
+.bestsellers_list {
+  gap: 32px;
+}
+.bestsellers_item{
+width: calc((100% - 32px) / 2);
+}
+.bestsellers_item-none{
+  display: inline-block;
+}
+.bestsellers_title{
+  line-height: 1.4;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.bestsellers_text{
+  font-size: 18px;
+}
+.bestsellers_images {
+  max-width: 704px;
+  margin-bottom: 15px;
+}
+.bestsellers_catalog {
+  max-width: 336px;
+  margin-bottom: 15px;
+}
+.bestsellers_price{
+  font-size: 18px;
+}
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1126px;
-    
-  }
+.container {
+  max-width: 1128px;
+}
 .bestsellers_flex{
   display: flex;
-  gap: 32px;
-  }
+  gap: 24px;
+}
+.bestsellers_platform {
+  margin-bottom: 0px;
+  width: 100%;
+}
 .bestsellers_list{ 
   gap: 20px;
-  width: calc((100% - 20px) / 2); 
+}
+.bestsellers_item{
+  width: calc((100% - 20px) / 2);
 }
 .bestsellers_images {
   max-width: 536px;
+  margin-bottom: 15px;
+}
+.bestsellers_catalog {
+  max-width: 258px;
 }
 }
