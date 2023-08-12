@@ -74,6 +74,14 @@
   margin-bottom: 30px;
 }
 
+.form-btn:focus {
+  outline: 1px solid var(--dark-grey);
+}
+
+.form-img img:focus {
+  outline: 1px solid var(--blue-font);
+}
+
 .section-subscription {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -101,6 +109,9 @@
 }
 
 .check-text {
+  min-width: 305px;
+  display: flex;
+  gap: 8px;
   color: #7a7a7a;
   font-size: 16px;
   font-style: normal;
