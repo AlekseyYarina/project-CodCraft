@@ -50,9 +50,7 @@
    
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 375px) and (min-resolution: 192dpi), screen and (min-width: 375px) and (min-resolution: 2dppx) {
     .hero-container{
         background-image: url(../img/hero/hero-mob-2x.jpg);
     }
@@ -104,11 +102,9 @@
    
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero-container {
-        background-image: url(../img/)
+        background-image: url(../img/hero/hero-tab1-2x.jpg), url(../img/hero/hero-tab2-2x.jpg);
     }
 }
 
@@ -147,11 +143,9 @@
    
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
     .hero-container {
-        background-image: url(../img/hero/hero-desc1-2x.jpg), url(../img/hero/hero-desc2-2x.jpg), url(../img/hero/hero-desc3-2x.jpg)
+        background-image: url(../img/hero/hero-desc1-2x.jpg), url(../img/hero/hero-desc2-2x.jpg), url(../img/hero/hero-desc3-2x.jpg);
     }
 }
 
