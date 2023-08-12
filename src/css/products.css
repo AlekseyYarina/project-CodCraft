@@ -1,5 +1,5 @@
 .products {
-  padding: 64px 0;
+  padding: 0;
 }
 .products-title {
   color: var(--blue-font, #0a224a);
@@ -34,7 +34,7 @@
     padding: 0 32px;
   }
   .products {
-    padding: 100px 0;
+    padding: 0;
   }
   .products-title {
     font-size: 32px;
