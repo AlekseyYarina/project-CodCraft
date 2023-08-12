@@ -89,7 +89,7 @@
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--dark-grey, #b6b6b6);
-  border: 1px solid #B6B6B6;
+  border: 1px solid #b6b6b6;
   fill: transparent;
   background-color: transparent;
 }
@@ -100,6 +100,12 @@
   border: none;
 }
 
-.check-text:focus span {
-  border: 1px solid red;
+.check-text {
+  color: #7a7a7a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  gap: 8px;
 }
