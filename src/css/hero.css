@@ -1,6 +1,7 @@
 .hero-container {
     height: 717px;
-    padding-top: 130px;
+    padding: 140px 16px 0 16px;
+    /* padding-top: 130px; */
     background-image: url(../img/hero/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
