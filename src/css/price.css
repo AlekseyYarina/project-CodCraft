@@ -1,0 +1,167 @@
+.price-section {
+  padding: 94px 16px;
+  background-color: var(--white);
+  /* max-width: 375px; */
+  margin: 0 auto;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.furniture-item-container {
+}
+
+.furniture-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.furniture-item {
+  color: var(--blue-font);
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.furniture-price-container {
+}
+
+.furniture-price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+}
+
+.furniture-price-item {
+  color: var(--blue-font);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.before-line {
+  position: relative;
+  color: var(--blue-font);
+}
+
+.before-line::before {
+  content: "";
+  top: -30px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  background-color: var(--blue-font);
+  min-width: 290px;
+}
+
+
+.after-line::after {
+  content: "";
+  top: 73px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  background-color: var(--blue-font);
+  min-width: 290px;
+}
+
+
+
+@media screen and (min-width: 375px) {
+     .container {
+    max-width: 375px;
+  } 
+
+  .before-line::before {
+    width: 344px;
+  }
+  
+  .after-line::after {
+    width: 344px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .price-section {
+    padding: 130px 32px;
+    max-width: 768px;
+  }
+
+  .furniture-item-list {
+    gap: 60px;
+  }
+
+  .furniture-item {
+    font-size: 32px;
+    line-height: 1.41;
+  }
+
+  .furniture-price-list {
+    gap: 78px;
+  }
+
+  .furniture-price-item {
+    font-size: 18px;
+    line-height: 1.50; 
+  }
+
+  .before-line::before {
+    content: "";
+    top: -30px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    background-color: var(--blue-font);
+    width: 704px;
+  }
+
+  .after-line::after {
+    content: "";
+    top: 73px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    background-color: var(--blue-font);
+    width: 704px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+      }
+
+      .price-section {
+        max-width: 1096px;
+      }
+
+      .before-line::before {
+        content: "";
+        top: -30px;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        background-color: var(--blue-font);
+        width: 1032px;
+      }
+    
+      .after-line::after {
+        content: "";
+        top: 73px;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        background-color: var(--blue-font);
+        width: 1032px;
+      }
+}
+   
