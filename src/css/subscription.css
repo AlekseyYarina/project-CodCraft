@@ -75,6 +75,31 @@
 }
 
 .section-subscription {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form-checkbox-accent {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--dark-grey, #b6b6b6);
+  border: 1px solid #B6B6B6;
+  fill: transparent;
+  background-color: transparent;
+}
+
+.form-checkbox:checked + .check-text span {
+  background-color: var(--blue-font);
+  fill: var(--white);
+  border: none;
+}
+
+.check-text:focus span {
+  border: 1px solid red;
 }
