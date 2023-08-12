@@ -120,3 +120,7 @@
   display: flex;
   gap: 8px;
 }
+
+.form-checkbox:checked + .check-text span:focus {
+  border: 1px solid red;
+}
