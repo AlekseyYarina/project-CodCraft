@@ -1,6 +1,6 @@
 .hero-container {
     height: 717px;
-    padding-top: 130px;
+    padding: 140px 16px 0 16px;
     background-image: url(../img/hero/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -70,7 +70,7 @@
         max-width: 1440px;
         background-image: url(../img/hero/hero-tab1.jpg), url(../img/hero/hero-tab2.jpg);
         background-position: left 32px bottom 166px, right 32px top;
-        background-size: 310px 329px, 376px 530px;
+        background-size: 310px 329px, 367px 531px;
     }
 
     .hero-title {
