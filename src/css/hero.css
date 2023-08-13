@@ -1,0 +1,152 @@
+.hero-container {
+    height: 717px;
+    padding: 140px 16px 0 16px;
+    background-image: url(../img/hero/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    max-width: 285px;
+    font-family: Playfair Display;
+    color: var(--blue-font);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.hero-text {
+    color: var(--blue-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.hero-link-btn {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 12px 65px;
+    background-color: var(--blue-font);
+    border: none;
+}
+
+.hero-link-btn:active {
+    background-color: var(--active-blue);
+    transition: 300ms linear;
+    
+}
+
+@media screen and (min-width: 375px) {
+   
+}
+
+@media screen and (min-width: 375px) and (min-resolution: 192dpi), screen and (min-width: 375px) and (min-resolution: 2dppx) {
+    .hero-container{
+        background-image: url(../img/hero/hero-mob-2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-section {
+        max-width: 768px;
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+
+    .hero-container {
+        padding: 0 32px;
+        height: 697px;
+        max-width: 1440px;
+        background-image: url(../img/hero/hero-tab1.jpg), url(../img/hero/hero-tab2.jpg);
+        background-position: left 32px bottom 166px, right 32px top;
+        background-size: 310px 329px, 367px 531px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        max-width: 648px;
+        margin-bottom: 410px;
+    }
+
+    .hero-style-container {
+        height: 134px;
+        width: 312px;
+    }
+   
+   .hero-text {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        letter-spacing: 0;
+   }
+   
+   .hero-link-btn {
+        padding: 13px 72px;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0;
+   }
+
+  
+   
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: url(../img/hero/hero-tab1-2x.jpg), url(../img/hero/hero-tab2-2x.jpg);
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+
+    .hero-section {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+
+    .hero-container {
+        padding: 0 60px;
+        height: 530px;
+        max-width: 1440px;
+        background-image: url(../img/hero/hero-desc1.jpg), url(../img/hero/hero-desc2.jpg), url(../img/hero/hero-desc3.jpg);
+        background-position: left 60px bottom, center , right 60px top;
+        background-size: 310px 329px, 648px 530px, 312px 337px;
+        
+    }
+
+    .hero-title {
+        max-width: 648px;
+        font-size: 50px;
+        margin-bottom: 246px;
+   }
+
+   .hero-style-container {
+        height: 134px;
+        width: 312px;
+        margin-left: 1011px;
+    }
+   
+   
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+    .hero-container {
+        background-image: url(../img/hero/hero-desc1-2x.jpg), url(../img/hero/hero-desc2-2x.jpg), url(../img/hero/hero-desc3-2x.jpg);
+    }
+}
+
+
