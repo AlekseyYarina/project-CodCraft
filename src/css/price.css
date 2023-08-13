@@ -140,6 +140,41 @@
           max-width: 1128px;
         }
   
+        /*! Animation started */
+        .furniture-item-p {
+          position: relative;
+          cursor: pointer;
+          display: inline-block;
+          transition: transform 0.5s ease-in-out; /* Анимация сдвига вправо */
+        }
+        
+        .furniture-item-p::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -40px;
+          transform: translate(-50%, -50%);
+          width: 40px; /* Ширина псевдоэлемента */
+          height: 3px;
+          background-color: var(--blue-font);
+          visibility: hidden; /* Первоначально скрыт */
+          transition: cubic-bezier(0.25, 0.1, 0.25, 1) visibility 0s, width 0.5s ease-in-out; /* Задержка видимости псевдоэлемента и анимация увеличения ширины */
+        }
+
+        
+        .furniture-item-p.active::before {
+          visibility: visible; /* Сделать псевдоэлемент видимым при активном классе */
+          width: 40px; /* Увеличение ширины псевдоэлемента при активном классе */
+        }
+        
+        /* Анимация по клику */
+        .furniture-item-p.active {
+          transform: translateX(70px);
+        }
+
+
+/*! Animation finished */
+
         .before-line::before {
           content: "";
           top: -30px;
