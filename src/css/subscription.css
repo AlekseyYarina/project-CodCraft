@@ -74,14 +74,6 @@
   margin-bottom: 30px;
 }
 
-.form-btn:focus {
-  outline: 1px solid var(--dark-grey);
-}
-
-.form-img img:focus {
-  outline: 1px solid var(--blue-font);
-}
-
 .section-subscription {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -100,27 +92,64 @@
   border: 1px solid #b6b6b6;
   fill: transparent;
   background-color: transparent;
+  padding: 6px;
 }
 
-.form-checkbox:checked + .check-text span {
+.form-checkbox:checked + .check-text-box span {
   background-color: var(--blue-font);
   fill: var(--white);
   border: none;
 }
 
-.check-text {
-  min-width: 305px;
+.check-text-box {
   display: flex;
   gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form-check-text {
   color: #7a7a7a;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  display: flex;
-  gap: 8px;
+  width: 100%;
 }
 
-.form-checkbox:checked + .check-text span:focus {
-  border: 1px solid red;
+.modal-field:not(:last-child) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.check-text-box > .form-checkbox-accent:focus {
+  border: 1px solid var(--blue-font);
+}
+
+
+@media screen and (min-width: 375px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .form-text-box {
+    justify-content: flex-start;
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+  }
+
+  .form-text {
+    margin-bottom: 20px;
+    max-width: 525px;
+  }
+
+  .form-input {
+    min-width: 536px;
+  }
+
+  .form-btn {
+    margin-bottom: 64px;
+  }
 }
