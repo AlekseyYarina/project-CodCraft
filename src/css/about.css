@@ -48,7 +48,7 @@
 }
 
 .statistics-item {
-  width: 170px;
+  width: 180px;
 }
 
 .statistics-numbers {
@@ -71,15 +71,19 @@
   width: 100%;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 375px) {
   .about-container {
-    padding: 0 16px;
     max-width: 375px;
   }
 }
 
 
 @media screen and (min-width: 768px) {
+  .container.about-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
   .about-content {
     margin-bottom: 30px;
     padding: 36px 64px;
@@ -111,7 +115,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .about-container {
+  .container.about-container {
+    max-width: 1440px;
+    padding: 0 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
