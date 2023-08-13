@@ -31,6 +31,7 @@
   flex-shrink: 0;
   transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1),
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0px;
 }
 
 .form-input:focus {
