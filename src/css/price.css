@@ -1,12 +1,11 @@
 .price-section {
-    padding: 94px 16px;
+    padding: 94px 0;
     background-color: var(--white);
     width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
   }
   
-  .furniture-item-container {
+  .container {
   }
   
   .furniture-item-list {
@@ -71,7 +70,7 @@
       max-width: 375px;
     } 
 
-    .price-section  {
+    .price-section > .container  {
         max-width: 375px;
     }
   
@@ -82,12 +81,16 @@
     .container {
       max-width: 768px;
     }
-  
-    .price-section {
-      padding: 130px 32px;
-      max-width: 768px;
+
+    .price-section > .container {
+      max-width: 736px;
     }
   
+    .price-section {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+
     .furniture-item-list {
       gap: 60px;
     }
@@ -133,8 +136,7 @@
           max-width: 1440px;
         }
   
-        .price-section {
-          padding: 130px 16px;
+        .price-section > .container {
           max-width: 1128px;
         }
   
