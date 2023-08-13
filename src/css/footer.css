@@ -26,7 +26,8 @@
     display: flex;
     gap: 30px;
     margin-right: auto;
-    transform: translateY(-15%);
+    justify-content: center;
+    align-items: center;
 }
 .footer__icon-link {
     fill: var(--white);
@@ -101,13 +102,12 @@
 .accent-link {
     color: var(--lightslate, #8e8f99);
     width: 616px;
+    text-decoration: underline;
 }
 
 .footer-social {
     text-align: right;
 }
-
-
 
 /* \\\\\\\\\\\\\\\\\\\\\\\@media\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -115,9 +115,8 @@
 @media screen and (max-width: 767px) {
 
     .footer-container {
-        /* padding:  0 16px; */
+        padding:  0 16px;
         max-width: 375px;
-        /* flex-wrap: wrap; */
     }
 
     .footer-logo-icon {
@@ -133,8 +132,6 @@
         margin-bottom: 36px;
     }
 
-
-
     .footer-nav-dox {
         margin-bottom: 36px;
     }
@@ -146,9 +143,9 @@
     .footer-nav-link {
         font-size: 16px;
     }
-    .footer__icon-link {
-        width: 28px;
-        height: 28px;
+   
+    .social-list {
+        transform: translateY(-20%);
     }
 
     .address-mapa,
@@ -156,7 +153,7 @@
         gap: 8px;
     }
 
-    .address-mapa-link {
+    .address-mapa-link, .telefons-item {
         font-size: 16px;
     }
 
@@ -201,16 +198,6 @@
         flex-direction: column;
     }
 
-    .footer__icon-link {
-        width: 40px;
-        height: 40px;
-    }
-
-    .social-icon-link {
-        width: 40px;
-        height: 40px;
-    }
-
     .contact {
         margin-top: -143px;
         margin-bottom: 64px;
@@ -223,19 +210,15 @@
     .telefons {
         margin-bottom: 24px;
     }
-
-
 }
 
 /* LAPTOP */
 @media screen and (min-width:1440px) {
+
     .footer-container {
         max-width: 1440px;
-        border: 2px solid red;
         color: #fff;
-        /* padding: 0 60px; */
     }
-
 
     .footer-logo-nav {
         display: flex;
@@ -251,7 +234,6 @@
         display: flex;
         gap: 24px;
     }
-
 
     .contact {
         display: flex;
@@ -270,12 +252,10 @@
         letter-spacing: 0.19px;
     }
 
-
+    
     .footer-nav-list {
         gap: 30px;
         display: flex;
         flex-direction: row;
     }
-
-
 }
