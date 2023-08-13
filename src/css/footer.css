@@ -9,7 +9,9 @@
     justify-content: space-between;
 }
 
-.footer-nav {}
+.footer-logo-icon {
+    fill: #FFF;
+}
 
 .footer-nav-link {
     color: var(--white, #FFF);
@@ -26,7 +28,11 @@
     margin-right: auto;
     transform: translateY(-15%);
 }
-
+.footer__icon-link {
+    fill: var(--white);
+    width: 28px;
+    height: 28px;
+}
 
 .address-footer {
     display: flex;
@@ -109,7 +115,7 @@
 @media screen and (max-width: 767px) {
 
     .footer-container {
-        padding:  0 16px;
+        /* padding:  0 16px; */
         max-width: 375px;
         /* flex-wrap: wrap; */
     }
@@ -127,6 +133,8 @@
         margin-bottom: 36px;
     }
 
+
+
     .footer-nav-dox {
         margin-bottom: 36px;
     }
@@ -138,23 +146,30 @@
     .footer-nav-link {
         font-size: 16px;
     }
-    
-    .address-mapa , .telefons{
-     gap: 8px;   
+    .footer__icon-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .address-mapa,
+    .telefons {
+        gap: 8px;
     }
 
     .address-mapa-link {
         font-size: 16px;
     }
 
-    .telefons{
+    .telefons {
         margin-bottom: 64px;
     }
 
-    .you-agree-text{
+    .you-agree-text {
         font-size: 12px;
-line-height: 1.16; /* 14/12 */
-letter-spacing: 0.09em; /* 1.188/12 */
+        line-height: 1.16;
+        /* 14/12 */
+        letter-spacing: 0.09em;
+        /* 1.188/12 */
     }
 
     .pochta {
@@ -168,18 +183,17 @@ letter-spacing: 0.09em; /* 1.188/12 */
 
     .footer_container {
         max-width: 768px;
-        padding: 0 32px;
     }
 
     .footer-logo-nav {
-    display: flex;
-}
+        display: flex;
+    }
 
-.footer-logo-icon {
-    width: 127px;
-height: 16px;
-margin-left: 249px;
-}
+    .footer-logo-icon {
+        width: 127px;
+        height: 16px;
+        margin-right: 249px;
+    }
 
     .footer-nav-list {
         display: flex;
@@ -193,22 +207,22 @@ margin-left: 249px;
     }
 
     .social-icon-link {
-        width: 40px ;
-        height: 40px ;
+        width: 40px;
+        height: 40px;
     }
 
-    .contact{
+    .contact {
         margin-top: -143px;
-            margin-bottom: 64px;
+        margin-bottom: 64px;
     }
 
     .address-footer {
         margin-bottom: 64px;
     }
 
-.telefons {
-    margin-bottom: 24px;
-}
+    .telefons {
+        margin-bottom: 24px;
+    }
 
 
 }
@@ -219,7 +233,7 @@ margin-left: 249px;
         max-width: 1440px;
         border: 2px solid red;
         color: #fff;
-        padding: 0 60px;
+        /* padding: 0 60px; */
     }
 
 
@@ -230,6 +244,7 @@ margin-left: 249px;
     .footer-logo-icon {
         width: 127px;
         height: 16px;
+        margin-right: 219px;
     }
 
     .footer-logo-dox {
@@ -262,5 +277,5 @@ margin-left: 249px;
         flex-direction: row;
     }
 
-   
+
 }
