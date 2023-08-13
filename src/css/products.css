@@ -1,5 +1,5 @@
 .products {
-  padding: 64px 0;
+  padding: 0;
 }
 .products-title {
   color: var(--blue-font, #0a224a);
@@ -29,12 +29,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .products >.container {
+    .products>.container {
     max-width: 768px;
     padding: 0 32px;
   }
   .products {
-    padding: 100px 0;
+    padding: 0;
   }
   .products-title {
     font-size: 32px;
@@ -65,7 +65,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .products >.container {
+    .products>.container {
     max-width: 1440px;
     padding: 0 60px;
   }
