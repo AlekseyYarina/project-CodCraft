@@ -222,14 +222,12 @@ margin-left: 249px;
         padding: 0 60px;
     }
 
- 
 
     .footer-logo-nav {
         display: flex;
     }
 
     .footer-logo-icon {
-        margin-right: 209px;
         width: 127px;
         height: 16px;
     }
