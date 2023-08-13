@@ -1,0 +1,268 @@
+.footer {
+    background: var(--blue-font, #0A224A);
+    padding: 48px 0 36px;
+    width: 100%;
+}
+
+.footer-uno {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav {}
+
+.footer-nav-link {
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.50;
+}
+
+.social-list {
+    display: flex;
+    gap: 30px;
+    margin-right: auto;
+    transform: translateY(-15%);
+}
+
+
+.address-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.address-mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.address-mapa-link {
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+}
+
+.telefons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.telefons-item {
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+}
+
+.pochta {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    display: flex;
+}
+
+.you-agree {
+    text-align: center;
+}
+
+.you-agree-text {
+    color: var(--lightslate, #8e8f99);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.188px;
+}
+
+.accent-link {
+    color: var(--lightslate, #8e8f99);
+    width: 616px;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\@media\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+
+    .footer-container {
+        padding:  0 16px;
+        max-width: 375px;
+        /* flex-wrap: wrap; */
+    }
+
+    .footer-logo-icon {
+        width: 100px;
+        height: 16px;
+    }
+
+    .social-list {
+        gap: 16px;
+    }
+
+    .footer-logo {
+        margin-bottom: 36px;
+    }
+
+    .footer-nav-dox {
+        margin-bottom: 36px;
+    }
+
+    .footer-nav-list {
+        gap: 8px;
+    }
+
+    .footer-nav-link {
+        font-size: 16px;
+    }
+    
+    .address-mapa , .telefons{
+     gap: 8px;   
+    }
+
+    .address-mapa-link {
+        font-size: 16px;
+    }
+
+    .telefons{
+        margin-bottom: 64px;
+    }
+
+    .you-agree-text{
+        font-size: 12px;
+line-height: 1.16; /* 14/12 */
+letter-spacing: 0.09em; /* 1.188/12 */
+    }
+
+    .pochta {
+        display: none;
+    }
+
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+
+    .footer_container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .footer-logo-nav {
+    display: flex;
+}
+
+.footer-logo-icon {
+    width: 127px;
+height: 16px;
+margin-left: 249px;
+}
+
+    .footer-nav-list {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .footer__icon-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon-link {
+        width: 40px ;
+        height: 40px ;
+    }
+
+    .contact{
+        margin-top: -143px;
+            margin-bottom: 64px;
+    }
+
+    .address-footer {
+        margin-bottom: 64px;
+    }
+
+.telefons {
+    margin-bottom: 24px;
+}
+
+
+}
+
+/* LAPTOP */
+@media screen and (min-width:1440px) {
+    .footer-container {
+        max-width: 1440px;
+        border: 2px solid red;
+        color: #fff;
+        padding: 0 60px;
+    }
+
+ 
+
+    .footer-logo-nav {
+        display: flex;
+    }
+
+    .footer-logo-icon {
+        margin-right: 209px;
+        width: 127px;
+        height: 16px;
+    }
+
+    .footer-logo-dox {
+        display: flex;
+        gap: 24px;
+    }
+
+
+    .contact {
+        display: flex;
+        gap: 24px 87px;
+        flex-wrap: wrap;
+        width: 820px;
+        height: 70px;
+        margin-top: 39px;
+        margin-bottom: 32px;
+        color: var(--white, #FFF);
+        font-family: Roboto;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.19px;
+    }
+
+
+    .footer-nav-list {
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+}
