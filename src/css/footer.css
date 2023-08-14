@@ -1,7 +1,8 @@
 .footer {
     background: var(--blue-font, #0A224A);
-    padding: 48px 0 36px;
+    padding: 42px 0 36px;
     width: 100%;
+  
 }
 
 .footer-uno {
@@ -87,7 +88,7 @@
 }
 
 .you-agree-text {
-    color: var(--lightslate, #8e8f99);
+    color: var(--dark-grey, #7a7a7a);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -96,7 +97,7 @@
 }
 
 .accent-link {
-    color: var(--lightslate, #8e8f99);
+    color: var(--dark-grey, #7a7a7a);
     width: 616px;
     text-decoration: underline;
 }
@@ -111,7 +112,7 @@
 @media screen and (max-width: 767px) {
 
     .footer-container {
-        padding: 0 16px;
+        padding: 0px 16px;
         max-width: 375px;
     }
 
@@ -125,7 +126,7 @@
     }
 
     .footer-logo {
-        margin-bottom: 36px;
+        margin-bottom: 42px;
     }
 
     .footer-nav-dox {
@@ -175,7 +176,7 @@
 
     .footer_container {
         max-width: 768px;
-        padding: 0 32px;
+        padding: 48px 32px;
     }
 
     .footer-logo-nav {
@@ -242,8 +243,8 @@
         flex-wrap: wrap;
         width: 820px;
         height: 70px;
-        margin-top: 39px;
-        margin-bottom: 32px;
+        margin-top: 32px;
+        margin-bottom: 35px;
         color: var(--white, #FFF);
         font-family: Roboto;
         font-size: 19px;
