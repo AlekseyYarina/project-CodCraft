@@ -31,10 +31,18 @@
   user-select: none;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-#myCheckbox:checked + .furniture-item-p {
+#radio1:checked + .furniture-item-p {
   transform: translateX(80px);
  }
-
+ #radio2:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+ #radio3:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+ #radio4:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
 .furniture-price-item::before {
   content: "";
   position: absolute;
@@ -48,7 +56,16 @@
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#myCheckbox:checked ~ .furniture-price-item::before {
+#radio1:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio2:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio3:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio4:checked ~ .furniture-price-item::before {
   opacity: 1;
 }
 
