@@ -158,9 +158,10 @@
   gap: 8px;
 }
 
-.form-img {
+.form-img-box picture .form-img {
   padding: 0px;
   margin: 0px;
+  display: inline-block;
 }
 
 .form-check-text {
@@ -211,6 +212,10 @@
 @media screen and (min-width: 768px) {
   .form-text-box {
     justify-content: flex-start;
+  }
+
+  .email-input-container {
+    width: auto;
   }
 
   .form-title {
@@ -268,5 +273,4 @@
     padding-top: 100px;
     padding-bottom: 86px;
   }
-  
 }
