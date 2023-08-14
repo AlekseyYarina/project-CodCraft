@@ -29,6 +29,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .footer__icon-link {
     fill: var(--white);
     width: 28px;
@@ -50,7 +51,6 @@
 
 .address-mapa-link {
     color: var(--white, #FFF);
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
@@ -66,7 +66,6 @@
 
 .telefons-item {
     color: var(--white, #FFF);
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
@@ -76,13 +75,11 @@
 
 .pochta {
     color: #FFF;
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.01em;
-    display: flex;
 }
 
 .you-agree {
@@ -91,7 +88,6 @@
 
 .you-agree-text {
     color: var(--lightslate, #8e8f99);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -115,7 +111,7 @@
 @media screen and (max-width: 767px) {
 
     .footer-container {
-        padding:  0 16px;
+        padding: 0 16px;
         max-width: 375px;
     }
 
@@ -143,7 +139,7 @@
     .footer-nav-link {
         font-size: 16px;
     }
-   
+
     .social-list {
         transform: translateY(-20%);
     }
@@ -153,7 +149,8 @@
         gap: 8px;
     }
 
-    .address-mapa-link, .telefons-item {
+    .address-mapa-link,
+    .telefons-item {
         font-size: 16px;
     }
 
@@ -164,9 +161,7 @@
     .you-agree-text {
         font-size: 12px;
         line-height: 1.16;
-        /* 14/12 */
         letter-spacing: 0.09em;
-        /* 1.188/12 */
     }
 
     .pochta {
@@ -180,6 +175,7 @@
 
     .footer_container {
         max-width: 768px;
+        padding: 0 32px;
     }
 
     .footer-logo-nav {
@@ -192,18 +188,23 @@
         margin-right: 249px;
     }
 
+    .footer__icon-link {
+        width: 40px;
+        height: 40px;
+    }
+
     .footer-nav-list {
         display: flex;
         gap: 16px;
         flex-direction: column;
     }
 
-    .contact {
-        margin-top: -143px;
-        margin-bottom: 64px;
+    .social-list {
+        margin-top: -9px;
     }
 
-    .address-footer {
+    .contact {
+        margin-top: -143px;
         margin-bottom: 64px;
     }
 
@@ -252,10 +253,11 @@
         letter-spacing: 0.19px;
     }
 
-    
+
     .footer-nav-list {
         gap: 30px;
         display: flex;
         flex-direction: row;
     }
+    
 }
