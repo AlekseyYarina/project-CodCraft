@@ -1,0 +1,94 @@
+<section class="section-subscription" id="section-subscription">
+  <div class="container form-container">
+    <div class="form-text-box">
+      <div class="form-text-wrap">
+        <h2 class="form-title">Newsletter</h2>
+        <p class="form-text">
+          Every week we will send you new designs and information about sales.
+        </p>
+      </div>
+      <form class="form">
+        <div class="form-field">
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Name"
+            id="form-input"
+            name="form-input"
+          />
+          <div class="email-input-container">
+            <input
+              type="email"
+              class="form-input"
+              placeholder="E-mail"
+              id="form-input"
+              name="form-input"
+            />
+            <span class="input-error-icon">
+              <svg class="error-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-error"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="form-field check-field">
+          <div class="checkbox-wrap">
+            <input
+              type="checkbox"
+              class="form-checkbox visually-hidden"
+              id="form-checkbox"
+              name="form-checkbox"
+            />
+            <label for="form-checkbox" class="form-checkbox-label">
+              <span class="form-checkbox-accent">
+                <svg class="checkbox-icon" width="13" height="13">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="form-check-text">
+                Agree to subscribe to the newsletter
+              </p>
+            </label>
+          </div>
+          <button class="form-btn">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="form-img-box">
+      <picture>
+        <source
+          srcset="
+            ./img/subscription/subscription-desc.jpg    1x,
+            ./img/subscription/subscription-desc-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+          width="460px"
+          height="410px"
+        />
+        <source
+          srcset="
+            ./img/subscription/subscription-tab.jpg    1x,
+            ./img/subscription/subscription-tab-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          width="704px"
+          height="396px"
+        />
+        <source
+          srcset="
+            ./img/subscription/subscription-mob.jpg    1x,
+            ./img/subscription/subscription-mob-2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="form-img"
+          width="343px"
+          height="300px"
+          src="./img/subscription/subscription-desc.jpg"
+          alt="Blue Sofa"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
