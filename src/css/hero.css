@@ -41,7 +41,9 @@
     cursor: pointer;
 }
 
-.hero-link-btn:active {
+.hero-link-btn:active, 
+.hero-link-btn:hover, 
+.hero-link-btn:focus  {
     background-color: var(--active-blue);
     transition: 300ms linear;
     
@@ -99,6 +101,8 @@
         line-height: 1.33;
         letter-spacing: normal;
    }
+
+   
 
   
    
