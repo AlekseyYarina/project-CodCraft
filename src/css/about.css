@@ -1,5 +1,6 @@
 .about-container.container {
-  padding: 64px 0;
+  padding: 0;
+  padding-bottom: 64px;
 }
 
 .about-content {
