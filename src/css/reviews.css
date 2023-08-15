@@ -93,14 +93,12 @@
   }
 
   .review-subtitle {
-    font-size: 18px;
-
-    line-height: 1.8;
+    font-size: 20px;
+    line-height: 2.25;
   }
 
   .review-item {
     border-radius: 8px;
-    width: calc((100% - 16px) / 2);
   }
 
   .reviews-list {
@@ -117,10 +115,6 @@
     line-height: 1.5;
   }
 
-  .reviews-list li:nth-child(3) {
-    display: none;
-  }
-  .reviews-list li:nth-child(1),
   .reviews-list li:nth-child(2) {
     display: block;
   }
@@ -145,8 +139,9 @@
     font-size: 32px;
   }
 
-  .review-item {
-    width: calc((100% - 24px * 2) / 3);
+  .review-subtitle {
+    font-size: 20px;
+    line-height: 2.25;
   }
 
   .review-block {
