@@ -40,13 +40,13 @@
     border: none;
     cursor: pointer;
 }
-
-.hero-link-btn:active, 
+ 
 .hero-link-btn:hover, 
-.hero-link-btn:focus  {
+.hero-link-btn:focus, 
+.hero-link-btn:active  {
     background-color: var(--active-blue);
     transition: 300ms linear;
-    
+
 }
 
 @media screen and (min-width: 375px) {
