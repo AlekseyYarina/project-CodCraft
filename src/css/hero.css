@@ -39,12 +39,14 @@
     background-color: var(--blue-font);
     border: none;
     cursor: pointer;
+    transition: 300ms linear;
 }
 
-.hero-link-btn:active {
+.hero-link-btn:hover,
+.hero-link-btn:focus,
+.hero-link-btn:active
+{
     background-color: var(--active-blue);
-    transition: 300ms linear;
-    
 }
 
 @media screen and (min-width: 375px) {
