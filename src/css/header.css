@@ -1,4 +1,8 @@
 @media (min-width:300px){
+.no-scroll {
+    overflow: hidden;
+}
+
 .header_container{
     padding: 28px 16px;
     background-color: var(--light-blue);
