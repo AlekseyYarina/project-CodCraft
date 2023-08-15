@@ -12,7 +12,7 @@ p {
 html {
   scroll-behavior: smooth;
   }
-  
+
 
 p:last-child {
   margin-bottom: 0;
@@ -79,5 +79,9 @@ body {
   margin: 0 auto;
   padding: 0 16px;
   /* border: 1px solid red; */
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
