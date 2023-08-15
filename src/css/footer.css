@@ -2,11 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.footer {
+footer {
     background: var(--blue-font, #0A224A);
-    padding: 42px 0 36px;
+    /* padding: 42px 0 0 0 0; */
     width: 100%;
-  
+}
+
+.footer-container{
+    padding: 36px 16px 16px 16px;
 }
 
 .footer-uno {
@@ -116,7 +119,6 @@ html {
 @media screen and (max-width: 767px) {
 
     .footer-container {
-        padding: 0px 16px;
         max-width: 375px;
     }
 
@@ -180,7 +182,7 @@ html {
 
     .footer_container {
         max-width: 768px;
-        padding: 48px 32px;
+        padding: 48px 32px 36px 32px;
     }
 
     .footer-logo-nav {
@@ -223,7 +225,9 @@ html {
 
     .footer-container {
         max-width: 1440px;
+        padding: 48px 60px 36px 60px;
         color: #fff;
+        margin: 0 auto;
     }
 
     .footer-logo-nav {
