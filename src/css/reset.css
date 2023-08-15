@@ -73,6 +73,9 @@ body {
   color: var(--blue-font, #0a224a);
   background-color: var(--white, #FFFFFF);
 }
+.no-scroll {
+  overflow: hidden;
+}
 .container {
   width: 100%;
   margin: 0 auto;
