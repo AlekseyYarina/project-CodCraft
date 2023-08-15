@@ -1,5 +1,4 @@
 @media (min-width:300px){
-
 .header_container{
     padding: 28px 16px;
     background-color: var(--light-blue);
@@ -54,7 +53,7 @@
     left: 0;
     transition: transform 250ms ease-in-out;
     position: fixed;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .burger_content {
