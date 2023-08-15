@@ -27,12 +27,12 @@ ul, ol {
 a {
   color: currentColor;
   text-decoration: none;
-  outline: none;
+
 }
 
 button {
   cursor: pointer;
-  outline: none;
+ 
 }
 
 img {
@@ -73,6 +73,7 @@ body {
   color: var(--blue-font, #0a224a);
   background-color: var(--white, #FFFFFF);
 }
+
 .container {
   width: 100%;
   margin: 0 auto;
