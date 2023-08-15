@@ -227,6 +227,7 @@ footer {
         max-width: 1440px;
         padding: 48px 60px 36px 60px;
         color: #fff;
+        margin: 0 auto;
     }
 
     .footer-logo-nav {
