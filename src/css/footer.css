@@ -4,13 +4,13 @@ html {
 
 footer {
     background: var(--blue-font, #0A224A);
-    /* padding: 42px 0 0 0 0; */
+    padding: 36px 0 16px;
     width: 100%;
 }
 
-.footer-container{
-    padding: 36px 16px 16px 16px;
-}
+/* .footer-container{
+    padding: 0 16px;
+} */
 
 .footer-uno {
     display: flex;
@@ -118,7 +118,12 @@ footer {
 /* MOBILE */
 @media screen and (max-width: 767px) {
 
-    .footer-container {
+    /* .footer-container {
+        max-width: 375px;
+
+    } */
+
+    .footer>.container {
         max-width: 375px;
     }
 
@@ -180,10 +185,19 @@ footer {
 /* TABLET */
 @media screen and (min-width: 768px) {
 
-    .footer_container {
+    .footer {
+        padding: 48px 0 36px 0;
+    }
+
+    .footer>.container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    /* .footer_container {
         max-width: 768px;
         padding: 48px 32px 36px 32px;
-    }
+    } */
 
     .footer-logo-nav {
         display: flex;
@@ -223,12 +237,21 @@ footer {
 /* LAPTOP */
 @media screen and (min-width:1440px) {
 
-    .footer-container {
+
+
+    .footer {
+        padding: 36px 0;
+    }
+
+    .footer>.container{
         max-width: 1440px;
-        padding: 48px 60px 36px 60px;
+        padding: 0 60px;
+    }
+
+    /* .footer-container {
         color: #fff;
         margin: 0 auto;
-    }
+    } */
 
     .footer-logo-nav {
         display: flex;
@@ -268,5 +291,5 @@ footer {
         display: flex;
         flex-direction: row;
     }
-    
+
 }
