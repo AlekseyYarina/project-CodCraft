@@ -1,3 +1,7 @@
+.about-container.container {
+  padding: 64px 0;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
