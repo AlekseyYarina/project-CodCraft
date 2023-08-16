@@ -3,6 +3,7 @@
     overflow: hidden;
 }
 
+
 header .link::after {
     left: 0;
     width: 100%;
@@ -38,6 +39,9 @@ header .link::after {
   }
   
 .header_main {
+
+.header_container{
+
     padding: 28px 16px;
     background-color: var(--light-blue);
 }
