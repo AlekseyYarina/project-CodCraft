@@ -265,6 +265,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .section-subscription > .container {
+    padding: 0;
+  }
   .container.form-container {
     max-width: 1128px;
   }
