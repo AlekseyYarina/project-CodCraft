@@ -1,47 +1,161 @@
 .price-section {
-    padding: 94px 0;
-    background-color: var(--white);
-    width: 100%;
-    margin: 0 auto;
+  padding: 94px 0;
+  background-color: var(--white);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.furniture-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.furniture-item {
+  color: var(--blue-font);
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.before-furniture {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.furniture-item-p {
+  margin-right: auto;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#radio1:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+ #radio2:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+ #radio3:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+ #radio4:checked + .furniture-item-p {
+  transform: translateX(80px);
+ }
+.furniture-price-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 50px; 
+  height: 3px;
+  background-color: var(--blue-font);
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#radio1:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio2:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio3:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+#radio4:checked ~ .furniture-price-item::before {
+  opacity: 1;
+}
+
+.before-furniture input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.furniture-price-item {
+  color: var(--blue-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.before-line {
+  position: relative;
+  color: var(--blue-font);
+}
+
+.before-line::before {
+  content: "";
+  top: -30px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  background-color: var(--blue-font);
+  width: 100%;
+}
+
+
+.after-line::after {
+  content: "";
+  top: 73px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  background-color: var(--blue-font);
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 375px) {
+     .container {
+    max-width: 375px;
+  } 
+
+  .price-section > .container  {
+      max-width: 375px;
   }
-  
+
+}
+
+
+@media screen and (min-width: 768px) {
   .container {
+    max-width: 768px;
   }
-  
+
+  .price-section > .container {
+    max-width: 736px;
+  }
+
+  .price-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
   .furniture-item-list {
-    display: flex;
-    flex-direction: column;
     gap: 60px;
   }
-  
+
   .furniture-item {
-    color: var(--blue-font);
-    font-size: 28px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    display: inline-block;
+    font-size: 32px;
+    line-height: 1.41;
   }
-  
-  .before-furniture {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+
+  .furniture-price-list {
+    gap: 78px;
   }
 
   .furniture-price-item {
-    color: var(--blue-font);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: none;
+    font-size: 18px;
+    line-height: 1.50; 
   }
-  
-  .before-line {
-    position: relative;
-    color: var(--blue-font);
-  }
-  
+
   .before-line::before {
     content: "";
     top: -30px;
@@ -51,8 +165,7 @@
     background-color: var(--blue-font);
     width: 100%;
   }
-  
-  
+
   .after-line::after {
     content: "";
     top: 73px;
@@ -62,119 +175,78 @@
     background-color: var(--blue-font);
     width: 100%;
   }
-  
-  
-  
-  @media screen and (min-width: 375px) {
-       .container {
-      max-width: 375px;
-    } 
 
-    .price-section > .container  {
-        max-width: 375px;
-    }
-  
-  }
-  
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
+}
 
-    .price-section > .container {
-      max-width: 736px;
-    }
-  
-    .price-section {
-      padding-top: 130px;
-      padding-bottom: 130px;
-    }
+@media screen and (min-width: 1440px) {
+ 
+  .price-section > .container {
+        max-width: 1128px;
+      }
 
-    .furniture-item-list {
-      gap: 60px;
-    }
-  
-    .furniture-item {
-      font-size: 32px;
-      line-height: 1.41;
-    }
-  
-    .furniture-price-list {
-      gap: 78px;
-    }
-  
-    .furniture-price-item {
-      font-size: 18px;
-      line-height: 1.50; 
-    }
-  
-    .before-line::before {
-      content: "";
-      top: -30px;
-      left: 0;
-      position: absolute;
-      height: 1px;
-      background-color: var(--blue-font);
-      width: 100%;
-    }
-  
-    .after-line::after {
-      content: "";
-      top: 73px;
-      left: 0;
-      position: absolute;
-      height: 1px;
-      background-color: var(--blue-font);
-      width: 100%;
-    }
-  
-  }
-  
-  @media screen and (min-width: 1440px) {
-      .container {
-          max-width: 1440px;
+      .before-line::before {
+        content: "";
+        top: -30px;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        background-color: var(--blue-font);
+        width: 100%;
+      }
+    
+      .after-line::after {
+        content: "";
+        top: 73px;
+        left: 0;
+        position: absolute;
+        height: 1px;
+        background-color: var(--blue-font);
+        width: 100%;
+      }
+      .price-section {
+          padding: 94px 0;
+          background-color: var(--white);
+          width: 100%;
+          margin: 0 auto;
         }
-  
-        .price-section > .container {
-          max-width: 1128px;
+        
+        .container {
         }
-  
-        /*! Animation started */
-        .furniture-item-p {
-          position: relative;
-          cursor: pointer;
+        
+        .furniture-item-list {
+          display: flex;
+          flex-direction: column;
+          gap: 60px;
+        }
+        
+        .furniture-item {
+          color: var(--blue-font);
+          font-size: 28px;
+          line-height: 1.5;
+          text-transform: uppercase;
           display: inline-block;
-          transition: transform 0.5s ease-in-out; /* Анимация сдвига вправо */
         }
         
-        .furniture-item-p::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: -40px;
-          transform: translate(-50%, -50%);
-          width: 40px; /* Ширина псевдоэлемента */
-          height: 3px;
-          background-color: var(--blue-font);
-          visibility: hidden; /* Первоначально скрыт */
-          transition: cubic-bezier(0.25, 0.1, 0.25, 1) visibility 0s, width 0.5s ease-in-out; /* Задержка видимости псевдоэлемента и анимация увеличения ширины */
+        .before-furniture {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
         }
-
-        
-        .furniture-item-p.active::before {
-          visibility: visible; /* Сделать псевдоэлемент видимым при активном классе */
-          width: 40px; /* Увеличение ширины псевдоэлемента при активном классе */
+      
+        .furniture-price-item {
+          color: var(--blue-font);
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.5;
+          text-transform: none;
         }
         
-        /* Анимация по клику */
-        .furniture-item-p.active {
-          transform: translateX(70px);
+        .before-line {
+          position: relative;
+          color: var(--blue-font);
         }
-
-
-/*! Animation finished */
-
+        
         .before-line::before {
           content: "";
           top: -30px;
@@ -184,7 +256,8 @@
           background-color: var(--blue-font);
           width: 100%;
         }
-      
+        
+        
         .after-line::after {
           content: "";
           top: 73px;
@@ -194,4 +267,101 @@
           background-color: var(--blue-font);
           width: 100%;
         }
-  }
+      }
+        
+        
+        @media screen and (min-width: 375px) {
+             .container {
+            max-width: 375px;
+          } 
+      
+          .price-section > .container  {
+              max-width: 375px;
+          }
+        
+        }
+        
+        
+        @media screen and (min-width: 768px) {
+          .container {
+            max-width: 768px;
+          }
+      
+          .price-section > .container {
+            max-width: 736px;
+          }
+        
+          .price-section {
+            padding-top: 130px;
+            padding-bottom: 130px;
+          }
+      
+          .furniture-item-list {
+            gap: 60px;
+          }
+        
+          .furniture-item {
+            font-size: 32px;
+            line-height: 1.41;
+          }
+        
+          .furniture-price-list {
+            gap: 78px;
+          }
+        
+          .furniture-price-item {
+            font-size: 18px;
+            line-height: 1.50; 
+          }
+        
+          .before-line::before {
+            content: "";
+            top: -30px;
+            left: 0;
+            position: absolute;
+            height: 1px;
+            background-color: var(--blue-font);
+            width: 100%;
+          }
+        
+          .after-line::after {
+            content: "";
+            top: 73px;
+            left: 0;
+            position: absolute;
+            height: 1px;
+            background-color: var(--blue-font);
+            width: 100%;
+          }
+        
+        }
+        
+        @media screen and (min-width: 1440px) {
+            .container {
+                max-width: 1440px;
+              }
+        
+              .price-section > .container {
+                max-width: 1128px;
+              }
+        
+              .before-line::before {
+                content: "";
+                top: -30px;
+                left: 0;
+                position: absolute;
+                height: 1px;
+                background-color: var(--blue-font);
+                width: 100%;
+              }
+            
+              .after-line::after {
+                content: "";
+                top: 73px;
+                left: 0;
+                position: absolute;
+                height: 1px;
+                background-color: var(--blue-font);
+                width: 100%;
+              }
+        }

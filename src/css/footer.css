@@ -1,8 +1,16 @@
-.footer {
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
     background: var(--blue-font, #0A224A);
-    padding: 48px 0 36px;
+    padding: 36px 0 16px;
     width: 100%;
 }
+
+/* .footer-container{
+    padding: 0 16px;
+} */
 
 .footer-uno {
     display: flex;
@@ -29,6 +37,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .footer__icon-link {
     fill: var(--white);
     width: 28px;
@@ -50,7 +59,6 @@
 
 .address-mapa-link {
     color: var(--white, #FFF);
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
@@ -66,7 +74,6 @@
 
 .telefons-item {
     color: var(--white, #FFF);
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
@@ -76,13 +83,11 @@
 
 .pochta {
     color: #FFF;
-    font-family: Roboto;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.01em;
-    display: flex;
 }
 
 .you-agree {
@@ -90,8 +95,7 @@
 }
 
 .you-agree-text {
-    color: var(--lightslate, #8e8f99);
-    font-family: Roboto;
+    color: var(--dark-grey, #7a7a7a);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -100,7 +104,7 @@
 }
 
 .accent-link {
-    color: var(--lightslate, #8e8f99);
+    color: var(--dark-grey, #7a7a7a);
     width: 616px;
     text-decoration: underline;
 }
@@ -114,8 +118,12 @@
 /* MOBILE */
 @media screen and (max-width: 767px) {
 
-    .footer-container {
-        padding:  0 16px;
+    /* .footer-container {
+        max-width: 375px;
+
+    } */
+
+    .footer>.container {
         max-width: 375px;
     }
 
@@ -129,7 +137,7 @@
     }
 
     .footer-logo {
-        margin-bottom: 36px;
+        margin-bottom: 42px;
     }
 
     .footer-nav-dox {
@@ -143,7 +151,7 @@
     .footer-nav-link {
         font-size: 16px;
     }
-   
+
     .social-list {
         transform: translateY(-20%);
     }
@@ -153,7 +161,8 @@
         gap: 8px;
     }
 
-    .address-mapa-link, .telefons-item {
+    .address-mapa-link,
+    .telefons-item {
         font-size: 16px;
     }
 
@@ -164,9 +173,7 @@
     .you-agree-text {
         font-size: 12px;
         line-height: 1.16;
-        /* 14/12 */
         letter-spacing: 0.09em;
-        /* 1.188/12 */
     }
 
     .pochta {
@@ -178,9 +185,19 @@
 /* TABLET */
 @media screen and (min-width: 768px) {
 
-    .footer_container {
-        max-width: 768px;
+    .footer {
+        padding: 48px 0 36px 0;
     }
+
+    .footer>.container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    /* .footer_container {
+        max-width: 768px;
+        padding: 48px 32px 36px 32px;
+    } */
 
     .footer-logo-nav {
         display: flex;
@@ -192,18 +209,23 @@
         margin-right: 249px;
     }
 
+    .footer__icon-link {
+        width: 40px;
+        height: 40px;
+    }
+
     .footer-nav-list {
         display: flex;
         gap: 16px;
         flex-direction: column;
     }
 
-    .contact {
-        margin-top: -143px;
-        margin-bottom: 64px;
+    .social-list {
+        margin-top: -9px;
     }
 
-    .address-footer {
+    .contact {
+        margin-top: -143px;
         margin-bottom: 64px;
     }
 
@@ -215,10 +237,21 @@
 /* LAPTOP */
 @media screen and (min-width:1440px) {
 
-    .footer-container {
-        max-width: 1440px;
-        color: #fff;
+
+
+    .footer {
+        padding: 36px 0;
     }
+
+    .footer>.container{
+        max-width: 1440px;
+        padding: 0 60px;
+    }
+
+    /* .footer-container {
+        color: #fff;
+        margin: 0 auto;
+    } */
 
     .footer-logo-nav {
         display: flex;
@@ -241,8 +274,8 @@
         flex-wrap: wrap;
         width: 820px;
         height: 70px;
-        margin-top: 39px;
-        margin-bottom: 32px;
+        margin-top: 32px;
+        margin-bottom: 35px;
         color: var(--white, #FFF);
         font-family: Roboto;
         font-size: 19px;
@@ -252,10 +285,11 @@
         letter-spacing: 0.19px;
     }
 
-    
+
     .footer-nav-list {
         gap: 30px;
         display: flex;
         flex-direction: row;
     }
+
 }

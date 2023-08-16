@@ -1,10 +1,13 @@
 @media (min-width:300px){
+.no-scroll {
+    overflow: hidden;
+}
 
 .header_container{
     padding: 28px 16px;
     background-color: var(--light-blue);
-    
 }
+
 
 .header_menu {
     max-width:343px ;
@@ -12,6 +15,7 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+    
 }
 
 .header_menu .logo {
@@ -45,21 +49,20 @@
 
 .burger_container {
     background-color: var(--white);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     transform: translateY(-150%);
     z-index: 999;
-    position: fixed;
     top: 0;
     left: 0;
     transition: transform 250ms ease-in-out;
+    position: fixed;
     overflow: scroll;
 }
 
 .burger_content {
     padding: 28px 16px;
     margin: 0 auto;
-    
     background-color: var(--light-blue);
 }
 
@@ -102,7 +105,6 @@
 }
 
 
-
 .burger_nav {
     display: flex;
     justify-content: center;
@@ -121,11 +123,26 @@
     line-height: 24px;
 }
 
-.burger_nav_menu .link:focus {
-    color:var(--active-blue);
-    border-bottom: 4px solid var(--active-blue);
+.burger_nav_menu .list_links {
+    position: relative;
 }
 
+    .burger_nav_menu .list .link:hover::after,
+      .burger_nav_menu .list .link:focus::after{
+        left: 0;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--blue-font);
+        transition: 250ms ease-in-out;
+        height: 3px;
+        bottom: -2px;
+      }
+
+
+      .burger_nav_menu .pages::after {
+        content: "";
+        position: absolute;
+      }
 
 }
 
@@ -220,14 +237,29 @@
         line-height: 27px;
     }
 
-    .desktop_menu .link:hover,
-    .desktop_menu .link:focus {
-        border-bottom: 2px solid var(--blue-font);
+    .list_links {
+        position: relative;
     }
 
-    .list-links {
+    .pages::after {
+        content: "";
+        position: absolute;
+      }
+      
+      .desktop_menu .list .link:hover::after,
+      .desktop_menu .list .link:focus::after{
+        left: 0;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--blue-font);
+        transition: 250ms ease-in-out;
+        height: 2px;
+        bottom: -2px;
+      }
+
+     
+
+    .list_links {
         display: flex;
     }
-
-
 }
