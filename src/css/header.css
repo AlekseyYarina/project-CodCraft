@@ -40,16 +40,10 @@ header .link::after {
   
   .header_main {
     padding: 28px 32px;
-}
-
-.header_container{
-
-    padding: 28px 16px;
     background-color: var(--light-blue);
 }
 
 .header_container{
-    background-color: var(--light-blue);
     max-width:343px;
     margin:0 auto;
 }
