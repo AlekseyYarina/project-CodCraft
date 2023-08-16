@@ -38,7 +38,9 @@ header .link::after {
     opacity: 1;
   }
   
-.header_main {
+  .header_main {
+    padding: 28px 32px;
+}
 
 .header_container{
 
@@ -274,4 +276,4 @@ header .link::after {
     .list_links {
         display: flex;
     }
-}
+ }
