@@ -1,6 +1,5 @@
 .hero-container {
-    height: 717px;
-    padding: 140px 16px 0 16px;
+    padding: 140px 16px 313px 16px;
     background-image: url(../img/hero/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +49,7 @@
 }
 
 @media screen and (min-width: 375px) {
-   
+    
 }
 
 @media screen and (min-width: 375px) and (min-resolution: 192dpi), screen and (min-width: 375px) and (min-resolution: 2dppx) {
@@ -70,10 +69,9 @@
 
     .hero-container {
         padding: 0 32px;
-        height: 697px;
         max-width: 1440px;
         background-image: url(../img/hero/hero-tab1.jpg), url(../img/hero/hero-tab2.jpg);
-        background-position: left 32px bottom 166px, right 32px top;
+        background-position: left 32px top 202px, right 32px top;
         background-size: 310px 329px, 367px 531px;
     }
 
@@ -126,10 +124,9 @@
 
     .hero-container {
         padding: 0 60px;
-        height: 530px;
         max-width: 1440px;
         background-image: url(../img/hero/hero-desc1.jpg), url(../img/hero/hero-desc2.jpg), url(../img/hero/hero-desc3.jpg);
-        background-position: left 60px bottom, center , right 60px top;
+        background-position: left 60px top 202px, center top, right 60px top;
         background-size: 310px 329px, 648px 530px, 312px 337px;
         
     }
