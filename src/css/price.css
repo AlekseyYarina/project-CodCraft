@@ -179,11 +179,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-      }
-
-      .price-section > .container {
+ 
+  .price-section > .container {
         max-width: 1128px;
       }
 
