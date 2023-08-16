@@ -162,6 +162,10 @@
     gap: 24px;
   }
 
+  .review-item {
+    padding: 32px;
+  }
+
   .reviews-list li:nth-child(3) {
     display: block;
   }
